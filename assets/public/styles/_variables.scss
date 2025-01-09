@@ -1,0 +1,28 @@
+:root {
+  --color-accent: #4d91f8;
+  --color-accent-80: #4f92f8cc;
+  --color-message: #eaf2ff;
+  --color-status: #1acf66;
+  --color-answer: #eeeeee;
+  --color-black: #000000;
+  --color-black-alt: #333333;
+  --color-white: #ffffff;
+
+  --border: 1px solid #eceded;
+  --border-radius: 24px;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 60px;
+  --shadow: 0px 4px 10px 0px rgba(136, 136, 136, 0.2);
+
+  --font-family-base: 'Stolzl', sans-serif;
+
+  --container-width: 1120px;
+  --container-padding-x: 12px;
+
+  --section-padding-y: 75px;
+
+  --input-height: 60px;
+  --button-height: 60px;
+
+  --transition-duration: 0.2s;
+}

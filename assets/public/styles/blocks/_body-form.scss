@@ -1,0 +1,83 @@
+.body-form {
+  width: 100%;
+  max-width: 835px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+
+  &__logo {
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    column-gap: 32px;
+    padding: 40px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+
+    @include tablet {
+      padding: 32px 20px 20px;
+    }
+  }
+
+  &__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    &-title {
+      @include fluid-text(24, 20);
+      color: #222222;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+
+    @include tablet {
+      display: none;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(64, 75, 91, 0.7) 0%, rgba(77, 145, 248, 0.7) 100%),
+        url('/assets/public/images/background-form.webp') lightgray 60% / cover no-repeat;
+      border-radius: inherit;
+    }
+
+    &-logo {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      bottom: 23px;
+      transform: translateX(-50%);
+      z-index: 2;
+	  white-space: nowrap;
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 478px;
+      background: url('/assets/public/images/background-chart.webp') lightgray 50% / cover no-repeat;
+      mix-blend-mode: lighten;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+}
